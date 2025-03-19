@@ -257,8 +257,10 @@ class PostCode {
       textadd += text;
     }
 
-    // Формируем итоговую строку с кодами для шрифта, выравнивания и текста
-    String textfinal = "$reset$fontSizeCode$alignmentCode$textadd$enter";
+    String boldOff = '\x1b\x45\x00';
+
+    // Формируем итоговую строку с кодами для шрифта, выравнивания и текста и устанавливаем размер шрифта
+    String textfinal = "$reset$fontSizeCode$alignmentCode$boldOff$textadd$enter";
 
     return textfinal.codeUnits;
   }
