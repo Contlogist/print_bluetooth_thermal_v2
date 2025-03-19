@@ -172,7 +172,7 @@ class PostCode {
     const cFontNormal = '\x1b\x4d\x00'; // Стандартный шрифт ASCII (2)
     // const cFontCompressed = '\x1b\x4d\x01'; // Сжатый шрифт
     // \x1d\x21\x01
-    const cFontCompressed = '\x1b\x4d\x00'; // Сжатый шрифт
+    const cFontCompressed = '\x1b\x4d\x01'; // Сжатый шрифт
     const cDoubleHeightFont = '\x1d\x21\x11'; // Двойная высота шрифта
     const cDoubleWidthFont = '\x1d\x21\x22'; // Двойная ширина шрифта
     const cBigFont = '\x1d\x21\x33'; // Большой шрифт
