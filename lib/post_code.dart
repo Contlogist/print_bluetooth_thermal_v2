@@ -168,7 +168,7 @@ class PostCode {
 
     //80 mm
     String fontSizeCode = "";
-    int maxCaracteres = 48; //normal
+    int maxCaracteres = 18; //normal
     switch (fontSize) {
       case FontSize.compressed:
         maxCaracteres = 64;
