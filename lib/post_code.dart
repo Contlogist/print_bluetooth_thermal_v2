@@ -222,6 +222,7 @@ class PostCode {
     const cAlignCenter = '\x1Ba1'; // Выравнивание по центру
     const cAlignRight = '\x1Ba2'; // Выравнивание по правому краю
 
+
     String alignmentCode = "";
     if (align == AlignPos.left) {
       alignmentCode = cAlignLeft;
