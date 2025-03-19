@@ -104,11 +104,11 @@ class PostCode {
 
   // Generate code QR
   static List<int> qr(
-    String text, {
-    AlignPos align = AlignPos.center,
-    QRSize size = QRSize.size4,
-    QRCorrection cor = QRCorrection.L,
-  }) {
+      String text, {
+        AlignPos align = AlignPos.center,
+        QRSize size = QRSize.size4,
+        QRCorrection cor = QRCorrection.L,
+      }) {
     List<int> bytes = <int>[];
 
     const cQrHeader = '\x1D(k';
@@ -207,8 +207,8 @@ class PostCode {
         break;
     // Добавим поддержку бумаги 58 мм
       case FontSize.size58:
-        maxCaracteres = 32; // Можно настроить в зависимости от того, сколько символов вмещается на бумаге 58 мм
-        fontSizeCode = cFontNormal; // Можно использовать другой шрифт, если требуется
+        maxCaracteres = 58; // Можно настроить в зависимости от того, сколько символов вмещается на бумаге 58 мм
+        fontSizeCode = cFontCompressed; // Можно использовать другой шрифт, если требуется
         break;
     }
 
