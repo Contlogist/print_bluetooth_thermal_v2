@@ -6,7 +6,7 @@ import 'package:flutter_esc_pos_utils/flutter_esc_pos_utils.dart';
 import 'package:print_bluetooth_thermal/post_code.dart';
 import 'package:print_bluetooth_thermal/print_bluetooth_thermal.dart';
 import 'package:image/image.dart' as img;
-import 'package:print_bluetooth_thermal/print_bluetooth_thermal_windows.dart';
+import 'package:print_bluetooth_thermal_v2/print_bluetooth_thermal_windows.dart';
 
 void main() {
   runApp(const MyApp());
