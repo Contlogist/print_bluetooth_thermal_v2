@@ -1,4 +1,4 @@
-name: print_bluetooth_thermal
+name: print_bluetooth_thermal_v2
 description: Ticket printing for android, location permission is not requested to connect the printer
 version: 1.1.6
 homepage: https://github.com/andresperezmelo/print_bluetooth_termal
@@ -39,7 +39,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: app.web.groons.print_bluetooth_thermal
+        package: app.web.groons.print_bluetooth_thermal_v2
         pluginClass: PrintBluetoothThermalPlugin
       ios:
         pluginClass: PrintBluetoothThermalPlugin
@@ -51,7 +51,7 @@ flutter:
         pluginClass: PrintBluetoothThermalPluginCApi
       #web:
         #pluginClass: PrintBluetoothThermalWeb
-        #fileName: print_bluetooth_thermal_web.dart
+        #fileName: print_bluetooth_thermal_v2_web.dart
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
