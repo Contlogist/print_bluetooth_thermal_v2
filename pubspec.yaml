@@ -39,7 +39,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: app.web.groons.print_bluetooth_thermal_v2
+        package: app.web.groons.print_bluetooth_thermal
         pluginClass: PrintBluetoothThermalPlugin
       ios:
         pluginClass: PrintBluetoothThermalPlugin
