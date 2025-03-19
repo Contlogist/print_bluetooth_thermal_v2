@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:io';
-import 'package:flutter/foundation.dart';
-import 'package:flutter/services.dart';
-import 'package:print_bluetooth_thermal_v2/print_bluetooth_thermal_windows.dart';
+import 'package:flutter/foundation.dart';  //kDebugMode
+import 'package:flutter/services.dart'; //MethodChannel
+import 'package:print_bluetooth_thermal_v2/print_bluetooth_thermal_windows.dart'; //PrintBluetoothThermalWindows
 
 class PrintBluetoothThermal {
   static const MethodChannel _channel = MethodChannel('groons.web.app/print');
