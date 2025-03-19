@@ -170,8 +170,6 @@ class PostCode {
 
     // Константы для разных шрифтов
     const cFontNormal = '\x1b\x4d\x00'; // Стандартный шрифт ASCII (2)
-    // const cFontCompressed = '\x1b\x4d\x01'; // Сжатый шрифт
-    // \x1d\x21\x01
     const cFontCompressed = '\x1b\x4d\x01'; // Сжатый шрифт
     const cDoubleHeightFont = '\x1d\x21\x11'; // Двойная высота шрифта
     const cDoubleWidthFont = '\x1d\x21\x22'; // Двойная ширина шрифта
@@ -257,10 +255,8 @@ class PostCode {
       textadd += text;
     }
 
-    String boldOff = '\x1b\x45\x00';
-
-    // Формируем итоговую строку с кодами для шрифта, выравнивания и текста и устанавливаем размер шрифта
-    String textfinal = "$reset$fontSizeCode$alignmentCode$boldOff$textadd$enter";
+    // Формируем итоговую строку с кодами для шрифта, выравнивания и текста
+    String textfinal = "$reset$fontSizeCode$alignmentCode$textadd$enter";
 
     return textfinal.codeUnits;
   }
